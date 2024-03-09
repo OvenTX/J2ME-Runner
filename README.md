@@ -10,4 +10,4 @@ System requirements: Android 4.0+
 ## License
 > Copyright 2017-2023 Nikita Shakarun.
 > Licensed under the [Apache License, Version 2.0.](http://www.apache.org/licenses/LICENSE-2.0)  
-> (See the [LICENSE](https://github.com/nikita36078/J2ME-Loader/blob/master/LICENSE) file for the whole license text.)
+> (See the [LICENSE](https://github.com/OvenTX/J2ME-Runner/blob/master/LICENSE) file for the whole license text.)
