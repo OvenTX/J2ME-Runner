@@ -180,7 +180,7 @@ public class MicroLoader {
 			}
 			ClassLoader loader = new AppClassLoader(dexSource.getAbsolutePath(),
 					dexOptDir.getAbsolutePath(), context.getClassLoader(), appDir);
-			Log.i(TAG, "loadMIDletList main: " + mainClass + " from dex:" + dexSource.getPath());
+			Log.i(TAG, "loadMIDletList main: " + mainClass + " from dex:" + dexSource.getPath());//点击启动加载时
 			//noinspection unchecked
 			Class<MIDlet> clazz = (Class<MIDlet>) loader.loadClass(mainClass);
 			Constructor<MIDlet> init = clazz.getDeclaredConstructor();

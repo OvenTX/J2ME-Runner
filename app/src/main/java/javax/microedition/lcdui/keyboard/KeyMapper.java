@@ -219,7 +219,7 @@ public class KeyMapper {
 		map.append(KeyEvent.KEYCODE_DPAD_DOWN, KEY_DOWN);
 		map.append(KeyEvent.KEYCODE_DPAD_LEFT, KEY_LEFT);
 		map.append(KeyEvent.KEYCODE_DPAD_RIGHT, KEY_RIGHT);
-		map.append(KeyEvent.KEYCODE_ENTER, KEY_FIRE);
+		map.append(KeyEvent.KEYCODE_DPAD_CENTER, KEY_FIRE);
 		map.append(KeyEvent.KEYCODE_DEL, KEY_CLEAR);
 		return map;
 	}

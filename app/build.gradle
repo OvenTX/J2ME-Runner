@@ -64,7 +64,7 @@ android {
             buildConfigField 'boolean', 'FULL_EMULATOR', 'true'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
                     'proguard-rules.pro', 'proguard-common.pro'
-            versionNameSuffix "-dev-" + generateVersionCode()
+            //versionNameSuffix "-dev-" + generateVersionCode()
         }
         // variant dimension for create android port from J2ME app source
         midlet {
@@ -118,10 +118,10 @@ android {
     }
 }
 
-static def generateVersionCode() {
-    def result = "git rev-list HEAD --count".execute().text.trim()
-    return result.toInteger()
-}
+//static def generateVersionCode() {
+//    def result = "git rev-list HEAD --count".execute().text.trim()
+//    return result.toInteger()
+//}
 
 def getMidletManifestProperties() {
     def file = project.file('src/midlet/resources/MIDLET-META-INF/MANIFEST.MF')

@@ -82,10 +82,11 @@ public class MainActivity extends BaseActivity {
 					.replace(R.id.container, fragment).commit();
 		}
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
-		if (!preferences.contains(PREF_TOOLBAR)) {
-			boolean enable = !ViewConfiguration.get(this).hasPermanentMenuKey();
-			preferences.edit().putBoolean(PREF_TOOLBAR, enable).apply();
-		}
+		//cxg:cancel actionBar as default
+//		if (!preferences.contains(PREF_TOOLBAR)) {
+//			boolean enable = !ViewConfiguration.get(this).hasPermanentMenuKey();
+//			preferences.edit().putBoolean(PREF_TOOLBAR, enable).apply();
+//		}
 		boolean warningShown = preferences.getBoolean(PREF_STORAGE_WARNING_SHOWN, false);
 		if (!FileUtils.isExternalStorageLegacy() && !warningShown) {
 			showScopedStorageDialog();

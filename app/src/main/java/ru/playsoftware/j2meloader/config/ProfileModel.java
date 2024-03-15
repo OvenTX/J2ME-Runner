@@ -169,10 +169,10 @@ public class ProfileModel {
 		this.dir = dir;
 		isNew = true;
 		version = VERSION;
-		screenWidth = 240;
-		screenHeight = 320;
-		screenBackgroundColor = 0xD0D0D0;
-		screenScaleType = 1;
+		screenWidth = 640;
+		screenHeight = 530;
+		screenBackgroundColor = 0x000000;
+		screenScaleType = 2;//fill
 		screenGravity = 1;
 		screenScaleRatio = 100;
 		screenScaleToFit = true;
@@ -184,7 +184,7 @@ public class ProfileModel {
 		fontSizeLarge = 26;
 		fontAA = true;
 
-		showKeyboard = true;
+		showKeyboard = false;
 		touchInput = true;
 
 		vkButtonShape = VirtualKeyboard.ROUND_RECT_SHAPE;
