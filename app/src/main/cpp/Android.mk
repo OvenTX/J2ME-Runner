@@ -20,7 +20,7 @@ ifeq ($(NDK_DEBUG),1)
 endif
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
-    LOCAL_ARM_NEON := false
+    # LOCAL_ARM_NEON := false
 endif
 
 include $(BUILD_SHARED_LIBRARY)
@@ -41,7 +41,7 @@ ifeq ($(NDK_DEBUG),1)
 endif
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
-    LOCAL_ARM_NEON := false
+    # LOCAL_ARM_NEON := false
 endif
 
 include $(BUILD_SHARED_LIBRARY)
